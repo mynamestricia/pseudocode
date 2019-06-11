@@ -1,0 +1,44 @@
+1.) Why do programmers use pseudocode?
+	
+	--Programmers use pseudocode as an outline prior to beginning to code.  As someone who has studied several foreign languages, I view it as creating a rough draft prior to 'translating' it to my language of choice.
+
+2.) If you run pseudocode on your computer what would happen?
+
+	--If I were to attempt to run psuedocode on my computer, it would error out; it's not a language that the computer would understand.
+
+
+
+Pseudocode Algorithms
+
+1. Create a function that takes two numbers and prints out the greatest number.
+
+	INPUT first number
+	INPUT second number
+
+	IF first number is greater than second number, return first number
+	  ELSE IF first number is less than second number, return second number
+	  ELSE IF first number equals second number, return 'Numbers are equal.'
+	  ELSE return null
+	END
+
+2. Create a function that prints out the numbers from 1 to 100.
+
+	INIT total to 0
+	WHILE the number is less than 100
+		ADD 1 to total
+	RETURN total
+	END
+
+3. Create a function that searches for a specific entry in a phonebook.
+
+	LET entry equal i
+	SET variable equal to Tricia
+	  WHILE i is not equal to Tricia, get next entry.
+	ENDWHILE;
+
+function phone (array) {
+	for (i = 0; i < array.length; i++) {
+	  if (array[i] == "Tricia") {
+	    console.log array[i]} 
+	}
+}
