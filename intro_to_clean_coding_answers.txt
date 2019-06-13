@@ -127,13 +127,13 @@ END
 7.  Duplicate Given an array of integers, find out whether the array contains any duplicate elements. The function should return true if any value appears at least twice in the array, and false if every element is distinct.
 
 	function Duplicate(array) {
-		for (let i = 0; i < array.length; i++) {
-			for (let j = i + 1; j <array.length; j++) {
-				if(array[i] == array[j]) {
-					return true;
-				} else {
-					return false;
-				}
-			}
-		}
-	}
+    let instance = [];
+    for(let i = 0; i <= array.length; i++) {
+        if(instance[array[i]] === undefined) {
+            instance[array[i]] = 1;
+        } else {
+            return true;
+        }
+    }
+    return false;
+}
